@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Služby – RZ REVEL</title>
+  <meta name="description" content="Služby Rudolf Zalubel – REVEL s.r.o.: inštalácie, servis a revízie elektrických rozvodov, bleskozvodov, EPS, HSP, kamerových a zabezpečovacích systémov a ďalších technológií.">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="preload" href="fonts/inter-tight-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Ikony (SVG sprite) – vo WP pôjde do header.php -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7l10-5z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+  <symbol id="i-thermo" viewBox="0 0 24 24"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></symbol>
+  <symbol id="i-flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m22 8-6 4 6 4V8z"/></symbol>
+  <symbol id="i-speaker" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><circle cx="12" cy="14" r="4"/><path d="M12 6h.01"/></symbol>
+  <symbol id="i-storm" viewBox="0 0 24 24"><path d="M6 16.33A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 .5 8.97"/><path d="m13 12-3 5h4l-3 5"/></symbol>
+  <symbol id="i-battery" viewBox="0 0 24 24"><rect x="2" y="7" width="16" height="10" rx="2"/><path d="M22 11v2M11 9l-2 3h4l-2 3"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5M9 18h6M10 22h4"/></symbol>
+  <symbol id="i-intercom" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="8" r="2.5"/><path d="M9 15h6M9 18h6"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6M15.5 7.5l3 3L22 7l-3-3"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-gate" viewBox="0 0 24 24"><path d="M4 21V5M4 9h17M8 9l3-4M13 9l3-4M18 9l3-4M2 21h4"/></symbol>
+  <symbol id="i-volume" viewBox="0 0 24 24"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-wind" viewBox="0 0 24 24"><path d="M9.59 4.59A2 2 0 1 1 11 8H2M12.59 19.41A2 2 0 1 0 14 16H2M17.73 7.73A2.5 2.5 0 1 1 19.5 12H2"/></symbol>
+  <symbol id="i-exit" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></symbol>
+  <symbol id="i-plug" viewBox="0 0 24 24"><path d="M12 22v-5M9 8V2M15 8V2M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8z"/></symbol>
+  <symbol id="i-wall" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 9v6M16 15v6M16 3v6M3 15h18M3 9h18M8 15v6M8 3v6"/></symbol>
+  <symbol id="i-network" viewBox="0 0 24 24"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3M12 12V8"/></symbol>
+  <symbol id="i-smarthome" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M8.5 15a5 5 0 0 1 7 0M10.5 17.5a2 2 0 0 1 3 0"/></symbol>
+</svg>
+
+<a class="skip-link" href="#obsah">Preskočiť na obsah</a>
+
+<!-- ================= HLAVIČKA ================= -->
+<header class="header">
+  <a class="logo" href="index.html" aria-label="RZ REVEL – úvod"><img src="img/logo-white.svg" alt="" width="3652" height="1054"></a>
+  <nav class="nav" aria-label="Hlavná navigácia">
+    <ul>
+      <li><a href="sluzby.html" aria-current="page">Služby</a></li>
+      <li><a href="o-nas.html">O nás</a></li>
+      <li><a href="realizacie.html">Realizácie</a></li>
+      <li><a href="certifikaty.html">Certifikáty</a></li>
+    </ul>
+  </nav>
+  <div class="header-right">
+    <a class="header-phone" href="tel:+421903418908" aria-label="Zavolať +421 903 418 908"><svg class="icon"><use href="#i-phone"/></svg><span>+421 903 418 908</span></a>
+    <a class="pill pill--glass" href="kontakt.html">Kontakt</a>
+    <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Otvoriť menu"><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <nav aria-label="Mobilná navigácia">
+    <a class="mobile-link" href="sluzby.html">Služby</a>
+    <a class="mobile-link" href="o-nas.html">O nás</a>
+    <a class="mobile-link" href="realizacie.html">Realizácie</a>
+    <a class="mobile-link" href="certifikaty.html">Certifikáty</a>
+    <a class="mobile-link" href="kontakt.html">Kontakt</a>
+  </nav>
+  <div class="mobile-menu-contact">
+    <a href="tel:+421903418908">+421 903 418 908</a>
+    <a href="tel:+421904672695">+421 904 672 695</a>
+    <a href="mailto:revelrz@gmail.com">revelrz@gmail.com</a>
+  </div>
+</div>
+
+<main id="obsah">
+  <div class="inset">
+    <section class="dark-card page-hero" data-dark-top>
+      <div class="bg"><img src="img/realizacie/praha-1.jpg" alt=""></div>
+      <div class="hero-inner">
+        <h1><span class="line"><span>Služby</span></span></h1>
+        <div class="hero-bottom">
+          <p class="hero-text" data-intro>Naša spoločnosť sa zaoberá nasledovným portfóliom služieb:</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="section section--flush">
+    <div class="wrap">
+      <ul class="services" data-reveal-group>
+        <li class="card service">
+          <div class="card-top"><svg class="icon"><use href="#i-zap"/></svg></div>
+          <div><h3>Elektrické rozvody</h3><p>Inštalácia, servis a revízie</p></div>
+        </li>
+        <li class="card service">
+          <div class="card-top"><svg class="icon"><use href="#i-storm"/></svg></div>
+          <div><h3>Bleskozvody</h3><p>Inštalácia, servis a revízie</p></div>
+        </li>
+        <li class="card service">
+          <div class="card-top"><svg class="icon"><use href="#i-flame"/></svg></div>
+          <div><h3>Elektrická požiarna signalizácia (EPS)</h3><p>Inštalácia, servis a revízie</p></div>
+        </li>
+        <li class="card service">
+          <div class="card-top"><svg class="icon"><use href="#i-volume"/></svg></div>
+          <div><h3>Hlasová signalizácia požiaru (HSP)</h3><p>Inštalácia, servis a revízie</p></div>
+        </li>
+        <li class="card service">
+          <div class="card-top"><svg class="icon"><use href="#i-video"/></svg></div>
+          <div><h3>Kamerové systémy (CCTV)</h3><p>Inštalácia, servis a revízie</p></div>
+        </li>
+        <li class="card service">
+          <div class="card-top"><svg class="icon"><use href="#i-shield"/></svg></div>
+          <div><h3>Zabezpečovacie systémy (PSN)</h3><p>Inštalácia, servis a revízie</p></div>
+        </li>
+        <li class="card service">
+          <div class="card-top"><svg class="icon"><use href="#i-key"/></svg></div>
+          <div><h3>Prístupové a dochádzkové systémy</h3><p>Inštalácia, servis a správa</p></div>
+        </li>
+        <li class="card service">
+          <div class="card-top"><svg class="icon"><use href="#i-wind"/></svg></div>
+          <div><h3>Požiarne odvetranie (PO)</h3><p>Inštalácia, servis a funkčné skúšky</p></div>
+        </li>
+        <li class="card service">
+          <div class="card-top"><svg class="icon"><use href="#i-exit"/></svg></div>
+          <div><h3>Núdzové osvetlenie (NO)</h3><p>Inštalácia, servis a funkčné skúšky</p></div>
+        </li>
+        <li class="card service">
+          <div class="card-top"><svg class="icon"><use href="#i-battery"/></svg></div>
+          <div><h3>Systémy nepretržitého napájania (UPS)</h3><p>Inštalácia, servis a funkčné skúšky</p></div>
+        </li>
+        <li class="card service">
+          <div class="card-top"><svg class="icon"><use href="#i-plug"/></svg></div>
+          <div><h3>Batériové stanice ECOFLOW</h3><p>Predaj</p></div>
+        </li>
+        <li class="card service">
+          <div class="card-top"><svg class="icon"><use href="#i-wall"/></svg></div>
+          <div><h3>Požiarne prestupy a upchávky</h3><p>Inštalácia</p></div>
+        </li>
+        <li class="card service">
+          <div class="card-top"><svg class="icon"><use href="#i-intercom"/></svg></div>
+          <div><h3>Audio a Video vrátniky</h3><p>Inštalácia a servis</p></div>
+        </li>
+        <li class="card service">
+          <div class="card-top"><svg class="icon"><use href="#i-network"/></svg></div>
+          <div><h3>Dátové rozvody / Štruktúrovaná kabeláž (ŠK)</h3><p>Inštalácia a servis</p></div>
+        </li>
+        <li class="card service">
+          <div class="card-top"><svg class="icon"><use href="#i-speaker"/></svg></div>
+          <div><h3>Ozvučovacia technika</h3><p>Inštalácia a servis</p></div>
+        </li>
+        <li class="card service">
+          <div class="card-top"><svg class="icon"><use href="#i-bulb"/></svg></div>
+          <div><h3>LED osvetlenie interiérov a exteriérov</h3><p>Inštalácia a servis</p></div>
+        </li>
+        <li class="card service">
+          <div class="card-top"><svg class="icon"><use href="#i-gate"/></svg></div>
+          <div><h3>Pohony brán a vjazdových bariér</h3><p>Inštalácia a servis</p></div>
+        </li>
+        <li class="card service">
+          <div class="card-top"><svg class="icon"><use href="#i-thermo"/></svg></div>
+          <div><h3>Elektrické podlahové vykurovanie</h3><p>Inštalácia a servis</p></div>
+        </li>
+        <li class="card service">
+          <div class="card-top"><svg class="icon"><use href="#i-smarthome"/></svg></div>
+          <div><h3>Smarthome / Inteligentná elektroinštalácia</h3><p>Inštalácia, servis a programovanie</p></div>
+        </li>
+      </ul>
+      <p class="services-note" data-reveal>V prípade záujmu o využitie nami poskytovaných služieb nás môžete kontaktovať telefonicky alebo e-mailom. Vo väčšine prípadov Vám cenovú ponuku na dodanie služieb pripravíme až po obhliadke pre čo najpresnejší výpočet ceny.</p>
+      <div class="services-cta" data-reveal><a class="pill pill--dark" href="tel:+421903418908" aria-label="Zavolajte nám: +421 903 418 908"><svg class="icon"><use href="#i-phone"/></svg>Zavolajte nám +421 903 418 908</a></div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= PÄTIČKA ================= -->
+<div class="footer-wrap">
+  <footer class="dark-card footer">
+    <div class="bg"><img src="img/realizacie/rovinka-2.jpg" alt="" loading="lazy"></div>
+    <div class="hero-inner">
+      <div class="footer-top">
+        <h2 class="h2">Kontakt</h2>
+        <div class="footer-contacts">
+          <a href="tel:+421903418908">+421 903 418 908</a>
+          <a href="tel:+421904672695">+421 904 672 695</a>
+          <a href="mailto:revelrz@gmail.com">revelrz@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h3>Fakturačné údaje</h3>
+          <address>Rudolf Zalubel – REVEL s.r.o.<br>Mlynarovičova 10<br>851 03 Bratislava<br>IČO: 36672599<br>DIČ: 2022239252<br>IČ DPH: SK2022239252</address>
+        </div>
+        <div>
+          <h3>Korešpondenčná adresa</h3>
+          <address>Rudolf Zalubel – REVEL s.r.o.<br>Nová 76<br>900 42 Dunajská Lužná</address>
+          <a class="text-link" href="https://goo.gl/maps/A7nd3nvtccNRuYF98" target="_blank" rel="noopener">Google Maps<svg class="icon"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div>
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="sluzby.html">Služby</a></li>
+            <li><a href="o-nas.html">O nás</a></li>
+            <li><a href="realizacie.html">Prehľad realizácií</a></li>
+            <li><a href="certifikaty.html">Certifikáty a osvedčenia</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Sledujte nás</h3>
+          <a href="https://www.facebook.com/RZREVEL/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>
+          <span>© <span data-year>2026</span> Rudolf Zalubel – REVEL s.r.o. · Zapísaná v OR [DOPLNIŤ súd, oddiel Sro, vložka č.]</span>
+          <nav aria-label="Právne informácie">
+            <a href="ochrana-osobnych-udajov.html">Ochrana osobných údajov</a>
+            <button type="button" data-cookie-settings>Nastavenia cookies</button>
+          </nav>
+        </div>
+        <img class="logo-mark" src="img/logo-white.svg" width="3652" height="1054" alt="RZ REVEL" loading="lazy">
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="js/gsap.min.js" defer></script>
+<script src="js/ScrollTrigger.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

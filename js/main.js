@@ -46,15 +46,6 @@
     lightbox.addEventListener('click', (e) => { if (e.target === lightbox) lightbox.close(); });
   }
 
-  /* Kontaktný formulár – v statickej verzii len ukážka (vo WP Contact Form 7) */
-  const form = document.querySelector('[data-demo-form]');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      form.querySelector('.form-note').hidden = false;
-    });
-  }
-
   /* Nastavenia cookies – otvorí lištu cookie pluginu (doplní sa vo WP) */
   document.querySelectorAll('[data-cookie-settings]').forEach((btn) => {
     btn.addEventListener('click', () => {

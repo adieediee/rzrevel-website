@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Certifikáty a osvedčenia – RZ REVEL</title>
   <meta name="description" content="Certifikáty a osvedčenia spoločnosti Rudolf Zalubel – REVEL s.r.o. na elektroinštalácie, bleskozvody, revízie a inštaláciu systémov.">
-  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <link rel="preload" href="fonts/inter-tight-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -32,17 +33,25 @@
   <symbol id="i-key" viewBox="0 0 24 24"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6M15.5 7.5l3 3L22 7l-3-3"/></symbol>
   <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
   <symbol id="i-gate" viewBox="0 0 24 24"><path d="M4 21V5M4 9h17M8 9l3-4M13 9l3-4M18 9l3-4M2 21h4"/></symbol>
+  <symbol id="i-volume" viewBox="0 0 24 24"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-wind" viewBox="0 0 24 24"><path d="M9.59 4.59A2 2 0 1 1 11 8H2M12.59 19.41A2 2 0 1 0 14 16H2M17.73 7.73A2.5 2.5 0 1 1 19.5 12H2"/></symbol>
+  <symbol id="i-exit" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></symbol>
+  <symbol id="i-plug" viewBox="0 0 24 24"><path d="M12 22v-5M9 8V2M15 8V2M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8z"/></symbol>
+  <symbol id="i-wall" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 9v6M16 15v6M16 3v6M3 15h18M3 9h18M8 15v6M8 3v6"/></symbol>
+  <symbol id="i-network" viewBox="0 0 24 24"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3M12 12V8"/></symbol>
+  <symbol id="i-smarthome" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M8.5 15a5 5 0 0 1 7 0M10.5 17.5a2 2 0 0 1 3 0"/></symbol>
 </svg>
 
 <a class="skip-link" href="#obsah">Preskočiť na obsah</a>
 
 <!-- ================= HLAVIČKA ================= -->
 <header class="header">
-  <a class="logo" href="index.html" aria-label="RZ REVEL – úvod">RZ</a>
+  <a class="logo" href="index.html" aria-label="RZ REVEL – úvod"><img src="img/logo-white.svg" alt="" width="3652" height="1054"></a>
   <nav class="nav" aria-label="Hlavná navigácia">
     <ul>
-      <li><a href="index.html#sluzby">Služby</a></li>
-      <li><a href="index.html#o-nas">O nás</a></li>
+      <li><a href="sluzby.html">Služby</a></li>
+      <li><a href="o-nas.html">O nás</a></li>
       <li><a href="realizacie.html">Realizácie</a></li>
       <li><a href="certifikaty.html" aria-current="page">Certifikáty</a></li>
     </ul>
@@ -56,8 +65,8 @@
 
 <div class="mobile-menu" id="mobile-menu">
   <nav aria-label="Mobilná navigácia">
-    <a class="mobile-link" href="index.html#sluzby">Služby</a>
-    <a class="mobile-link" href="index.html#o-nas">O nás</a>
+    <a class="mobile-link" href="sluzby.html">Služby</a>
+    <a class="mobile-link" href="o-nas.html">O nás</a>
     <a class="mobile-link" href="realizacie.html">Realizácie</a>
     <a class="mobile-link" href="certifikaty.html">Certifikáty</a>
     <a class="mobile-link" href="kontakt.html">Kontakt</a>
@@ -72,15 +81,14 @@
 <main id="obsah">
   <div class="inset">
     <section class="dark-card page-hero" data-dark-top>
-      <div class="bg"><img src="img/realizacie/senec-3.jpg" alt=""></div>
+      <div class="bg"><img src="img/realizacie/senec-9.jpg" alt=""></div>
       <div class="hero-inner">
         <h1>
           <span class="line"><span>Certifikáty</span></span>
           <span class="line"><span>a osvedčenia</span></span>
         </h1>
         <div class="hero-bottom">
-          <p class="hero-text" data-intro>Naša spoločnosť disponuje certifikátmi v oblastiach uvedených nižšie.</p>
-          <span class="wordmark-sm" data-intro>RZ REVEL</span>
+          <p class="hero-text" data-intro>Nižšie si môžete pozrieť prehľad výrobcov, s ktorými spolupracujeme v jednotlivých oblastiach, a zároveň certifikáty a osvedčenia, ktorými naša spoločnosť disponuje.</p>
         </div>
       </div>
     </section>
@@ -88,100 +96,78 @@
 
   <section class="section section--flush">
     <div class="wrap">
-      <div class="cert-grid" data-reveal-group>
-        <div class="card cert cert--feature">
-          <div class="card-top"><span></span><svg class="icon"><use href="#i-zap"/></svg></div>
-          <div>
-            <h3>Elektroinštalácie, bleskozvody a revízie elektrických zariadení</h3>
-            <p class="cert-note">Osvedčenie č. 026/1/2011-EZ-E-E2-A<br>Certifikát č. 012/1/2011-EZ-E-E2-A</p>
+      <div class="cert-text">
+        <h2 class="h3" data-reveal>Osvedčenia</h2>
+        <div class="cert-groups">
+          <div class="cert-group" data-reveal>
+            <h3>Elektroinštalácie a revízie §24</h3>
+            <p>č. osvedčenia: 026/1/2011-EZ-E-E2-A</p>
+          </div>
+          <div class="cert-group" data-reveal>
+            <h3>Technická služba</h3>
+          </div>
+          <div class="cert-group" data-reveal>
+            <h3>Práce vo výškach</h3>
           </div>
         </div>
-        <div class="card cert">
-          <div class="card-top"><span></span><svg class="icon"><use href="#i-thermo"/></svg></div>
-          <div>
-            <h3>Podlahové vykurovanie</h3>
-            <p class="cert-note">Certifikáty na inštalácie systémov:</p>
+        <h2 class="h3" data-reveal>Certifikáty</h2>
+        <div class="cert-groups">
+          <div class="cert-group" data-reveal>
+            <h3>Elektrická požiarna signalizácia (EPS)</h3>
+            <ul class="case-list"><li>Honeywell / ESSER</li><li>Sectro</li><li>Aritech</li><li>Bosch</li><li>Bentel</li><li>Unipos</li><li>Morley</li></ul>
           </div>
-          <div class="brands"><span class="chip">TEPLÁ PODLAHA</span><span class="chip">RAYCHEM</span><span class="chip">NEXANS</span></div>
-        </div>
-        <div class="card cert">
-          <div class="card-top"><span></span><svg class="icon"><use href="#i-flame"/></svg></div>
-          <div>
-            <h3>Elektrická požiarna signalizácia</h3>
-            <p class="cert-note">Certifikáty na inštalácie, servis a revízie systémov:</p>
+          <div class="cert-group" data-reveal>
+            <h3>Hlasová signalizácia požiaru (HSP)</h3>
+            <ul class="case-list"><li>Honeywell / ESSER</li><li>Sectro</li><li>Bosch</li><li>Toa</li><li>Astrea</li><li>Ateis</li></ul>
           </div>
-          <div class="brands"><span class="chip">ESSER</span><span class="chip">BOSCH</span><span class="chip">SECTRO</span><span class="chip">ARITECH</span><span class="chip">BENTEL</span><span class="chip">UNIPOS</span><span class="chip">MORLEY</span></div>
-        </div>
-        <div class="card cert">
-          <div class="card-top"><span></span><svg class="icon"><use href="#i-speaker"/></svg></div>
-          <div>
-            <h3>Hlasová signalizácia požiaru</h3>
-            <p class="cert-note">Certifikáty na inštalácie, servis a revízie systémov:</p>
+          <div class="cert-group" data-reveal>
+            <h3>Kamerové systémy (CCTV)</h3>
+            <p>Sme inštalačným partnerom výrobcov Dahua, ERBU, Avigilon, Camplus, Hikvision, Sony, Panasonic.</p>
           </div>
-          <div class="brands"><span class="chip">TOA</span><span class="chip">BOSCH</span><span class="chip">ATEIS</span><span class="chip">EVO</span><span class="chip">SECTRO</span><span class="chip">VARIODYN</span></div>
-        </div>
-        <div class="card cert">
-          <div class="card-top"><span></span><svg class="icon"><use href="#i-layers"/></svg></div>
-          <div>
-            <h3>Požiarne prestupy</h3>
-            <p class="cert-note">Certifikát:</p>
+          <div class="cert-group" data-reveal>
+            <h3>Zabezpečovacie systémy (PSN)</h3>
+            <p>Sme inštalačným partnerom výrobcov ELDES, Aritech, GENEVO, SATEL, Paradox, Galaxy, Texecom.</p>
           </div>
-          <div class="brands"><span class="chip">HILTI</span></div>
-        </div>
-        <div class="card cert">
-          <div class="card-top"><span></span><svg class="icon"><use href="#i-flame"/></svg></div>
-          <div>
-            <h3>Automatické hasiace zariadenia</h3>
-            <p class="cert-note">Certifikát</p>
+          <div class="cert-group" data-reveal>
+            <h3>Prístupové a dochádzkové systémy</h3>
+            <p>Pri inštaláciách používame výrobky od výrobcov ZKTeco, Dahua.</p>
           </div>
-        </div>
-        <div class="card cert">
-          <div class="card-top"><span></span><svg class="icon"><use href="#i-video"/></svg></div>
-          <div>
-            <h3>Kamerové systémy a systémy na rozpoznávanie ŠPZ</h3>
-            <p class="cert-note">Certifikáty na inštalácie systémov:</p>
+          <div class="cert-group" data-reveal>
+            <h3>Systémy nepretržitého napájania (UPS)</h3>
+            <p>Pri inštaláciách používame výrobky od výrobcov EATON, Riello, Zabat.</p>
           </div>
-          <div class="brands"><span class="chip">DAHUA</span><span class="chip">AVIGILON</span><span class="chip">SONY</span><span class="chip">AVER</span><span class="chip">HIKVISION</span><span class="chip">CNB</span><span class="chip">PANASONIC</span></div>
-        </div>
-        <div class="card cert">
-          <div class="card-top"><span></span><svg class="icon"><use href="#i-key"/></svg></div>
-          <div>
-            <h3>Zabezpečovacie systémy</h3>
-            <p class="cert-note">Licencia technickej služby č. PT 002745<br>Certifikáty na inštalácie systémov:</p>
+          <div class="cert-group" data-reveal>
+            <h3>Požiarne prestupy a upchávky</h3>
+            <p>Sme certifikovaný partner spoločnosti HILTI.</p>
           </div>
-          <div class="brands"><span class="chip">ELDES</span><span class="chip">GENEVO</span><span class="chip">PARADOX</span><span class="chip">GALAXY</span><span class="chip">TEXECOM</span><span class="chip">ARITECH</span></div>
-        </div>
-        <div class="card cert">
-          <div class="card-top"><span></span><svg class="icon"><use href="#i-intercom"/></svg></div>
-          <div>
-            <h3>Prístupové systémy a videovrátniky</h3>
-            <p class="cert-note">Certifikáty na inštalácie systémov:</p>
+          <div class="cert-group" data-reveal>
+            <h3>Audio a Video vrátniky</h3>
+            <p>Pri inštaláciách používame výrobky od výrobcov Dahua, Czechphone, Comelit, Hikvision, Entry.</p>
           </div>
-          <div class="brands"><span class="chip">DAHUA</span><span class="chip">2N</span><span class="chip">CZECHPHONE</span><span class="chip">ENTRY</span><span class="chip">AVIGILON</span><span class="chip">COMELIT</span></div>
-        </div>
-        <div class="card cert">
-          <div class="card-top"><span></span><svg class="icon"><use href="#i-building"/></svg></div>
-          <div>
-            <h3>Automatizácia a inteligentné ovládanie domácnosti</h3>
-            <p class="cert-note">Certifikát na inštaláciu systému:</p>
+          <div class="cert-group" data-reveal>
+            <h3>Dátové rozvody / Štruktúrovaná kabeláž (ŠK)</h3>
+            <p>Pri inštaláciách používame výrobky od výrobcov CONTEG, ROLINE, UBIQUITI, TPLINK, KRUGEL EXIM a mnohých ďalších.</p>
           </div>
-          <div class="brands"><span class="chip">TAPHOME</span></div>
-        </div>
-        <div class="card cert">
-          <div class="card-top"><span></span><svg class="icon"><use href="#i-gate"/></svg></div>
-          <div>
-            <h3>Pohony brán a vjazdové rampy</h3>
-            <p class="cert-note">Certifikát na inštaláciu systému:</p>
+          <div class="cert-group" data-reveal>
+            <h3>LED osvetlenie interiérov a exteriérov</h3>
+            <p>Pri inštaláciách používame kvalitné LED pásy, profily, napájacie zdroje a ovládacie prvky od spoločnosti LED1.sk (BENALEX).</p>
           </div>
-          <div class="brands"><span class="chip">FAAC</span></div>
-        </div>
-        <div class="card cert">
-          <div class="card-top"><span></span><svg class="icon"><use href="#i-battery"/></svg></div>
-          <div>
-            <h3>Záložné zdroje elektrickej energie</h3>
-            <p class="cert-note">Certifikáty na inštaláciu systémov:</p>
+          <div class="cert-group" data-reveal>
+            <h3>Pohony brán a vjazdových bariér</h3>
+            <p>Sme inštalačným partnerom spoločností FAAC a GENIUS.</p>
           </div>
-          <div class="brands"><span class="chip">RIELLO</span><span class="chip">ZABAT</span><span class="chip">EATON</span><span class="chip">APC</span></div>
+          <div class="cert-group" data-reveal>
+            <h3>Elektrické podlahové vykurovanie</h3>
+            <p>Sme inštalačným partnerom spoločností RAYCHEM a Teplá podlaha.</p>
+          </div>
+          <div class="cert-group" data-reveal>
+            <h3>Smarthome / Inteligentná elektroinštalácia</h3>
+            <p>Sme inštalačným partnerom slovenského výrobcu automatizácie TAPHOME.</p>
+          </div>
+          <div class="cert-group" data-reveal>
+            <h3>Batériové stanice</h3>
+            <p>Sme obchodným partnerom spoločnosti ECOFLOW.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -215,9 +201,9 @@
         <div>
           <h3>Menu</h3>
           <ul>
-            <li><a href="index.html#sluzby">Služby</a></li>
-            <li><a href="index.html#o-nas">O nás</a></li>
-            <li><a href="realizacie.html">Galéria realizácií</a></li>
+            <li><a href="sluzby.html">Služby</a></li>
+            <li><a href="o-nas.html">O nás</a></li>
+            <li><a href="realizacie.html">Prehľad realizácií</a></li>
             <li><a href="certifikaty.html">Certifikáty a osvedčenia</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
           </ul>
@@ -235,7 +221,7 @@
             <button type="button" data-cookie-settings>Nastavenia cookies</button>
           </nav>
         </div>
-        <span class="wordmark-sm">RZ REVEL</span>
+        <img class="logo-mark" src="img/logo-white.svg" width="3652" height="1054" alt="RZ REVEL" loading="lazy">
       </div>
     </div>
   </footer>
