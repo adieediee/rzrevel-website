@@ -118,9 +118,8 @@ address { font-style: normal; }
 }
 .header > * { pointer-events: auto; }
 .logo { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 5px; padding: 8px 12px; border-radius: 14px; flex: none; color: #fff; transition: background .3s; }
-.logo img { display: block; height: 40px; width: auto; }
-.logo-name { font-size: 11px; font-weight: 600; letter-spacing: 0.02em; line-height: 1; white-space: nowrap; opacity: .92; }
-@media (min-width: 760px) { .logo img { height: 52px; } .logo-name { font-size: 13px; } }
+.logo img { display: block; height: 46px; width: auto; }
+@media (min-width: 760px) { .logo img { height: 64px; } }
 .header.is-solid .logo { background: var(--glass-strong); }
 .nav { display: none; }
 .nav ul { display: flex; gap: 2px; padding: 4px; border-radius: 999px; background: var(--glass); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); transition: background .3s; }
@@ -196,7 +195,7 @@ body.menu-open { overflow: hidden; }
 .hero-lead { display: grid; gap: 28px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
 @media (max-width: 559px) { .hero-lead { width: 100%; } .hero-actions .pill { flex: 1 1 auto; justify-content: center; } }
-.logo-mark { display: block; height: clamp(40px, 3.6vw, 52px); width: auto; }
+.logo-mark { display: block; height: clamp(96px, 9vw, 132px); width: auto; }
 
 .page-hero { min-height: 440px; display: flex; flex-direction: column; justify-content: flex-end; }
 .page-hero .hero-inner { padding-top: 160px; }
